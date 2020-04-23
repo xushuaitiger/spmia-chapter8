@@ -70,13 +70,15 @@
       <artifactId>h2</artifactId>
     </dependency>
 
-    <dependency>
-      <groupId>postgresql</groupId>
-      <artifactId>postgresql</artifactId>
-      <version>9.1-901.jdbc4</version>
-    </dependency>
+      <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>5.1.42</version>
+      </dependency>
 
-    <!--Spring Cloud Stream Dependencies-->
+
+      <!--Spring Cloud Stream Dependencies-->
     <dependency>
        <groupId>org.springframework.cloud</groupId>
        <artifactId>spring-cloud-stream</artifactId>
