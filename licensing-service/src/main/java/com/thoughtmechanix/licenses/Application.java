@@ -61,6 +61,7 @@ public class Application {
         JedisConnectionFactory jedisConnFactory = new JedisConnectionFactory();
         jedisConnFactory.setHostName( serviceConfig.getRedisServer());
         jedisConnFactory.setPort( serviceConfig.getRedisPort() );
+        jedisConnFactory.setPassword(serviceConfig.getRedisPassword());
         return jedisConnFactory;
     }
 

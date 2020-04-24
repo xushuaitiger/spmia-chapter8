@@ -9,11 +9,14 @@ public class ServiceConfig{
   @Value("${example.property}")
   private String exampleProperty="";
 
-  @Value("${redis.server}")
+  @Value("${redis.host}")
   private String redisServer="";
 
   @Value("${redis.port}")
   private String redisPort="";
+
+  @Value("${redis.password}")
+  private String redisPassword="";
 
   public String getExampleProperty(){
     return exampleProperty;
@@ -27,4 +30,8 @@ public class ServiceConfig{
     return new Integer( redisPort ).intValue();
   }
 
+
+  public String getRedisPassword() {
+    return redisPassword;
+  }
 }

@@ -35,8 +35,9 @@ public class OrganizationServiceController {
     }
 
     @RequestMapping(value="/{organizationId}",method = RequestMethod.PUT)
-    public void updateOrganization( @PathVariable("organizationId") String orgId, @RequestBody Organization org) {
+    public Organization updateOrganization( @PathVariable("organizationId") String orgId, @RequestBody Organization org) {
         orgService.updateOrg( org );
+        return org;
 
     }
 
